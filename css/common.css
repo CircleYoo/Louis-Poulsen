@@ -15,8 +15,8 @@ body {
     position: relative;     
     transition: 0.35s ease-in-out;
 
-    -ms-overflow-style: none; 
-    scrollbar-width: none;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 
 }
 
