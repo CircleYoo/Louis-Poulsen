@@ -113,7 +113,7 @@ main #main_png { left: 7%; top: 44%; width: 20vw; }
     margin-right: 12vw; 
 }
 #con4_art_2 img { margin-bottom: 5rem; }
-
+#con4_art_2 br { display: none; }
 
 /* con5 : new arrival - style sheet */
 #con5 { margin-bottom: 5rem; padding: 5rem 0; }

@@ -49,11 +49,12 @@ header.scrolled {height: 3.375rem; }
     justify-content: space-between;
     z-index: 1;
     position: absolute;
-    right: -100vw;
+    right: -100%;
     transition: all .35s ease-in-out;
     padding: 4rem 3vw 3vw 3vw;
+    /* visibility: hidden; */
 }
-.mobile_menu_active { transform: translateX(-100vw); }
+.mobile_menu_active { transform: translateX(-100%); }
 .mobile_nav a {
     display: block;
     font-size: 2.25rem;
@@ -143,7 +144,7 @@ main #title_mobile {
     position: static;
     right: auto;
     top: auto;
-    width: 91vw;
+    width: 100%;
 }
 #con2_productNm {
     display: none;
