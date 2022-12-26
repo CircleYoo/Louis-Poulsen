@@ -28,7 +28,7 @@ header.scrolled {height: 3.375rem; }
 #search_bar button i { font-size: 1.5rem; }
 
 /* section Cart style sheet */
-#cart { width: 100vw; right: -100vw; }
+#cart { width: 100%; right: -100vw; }
 .cart_active { transform: translateX(-100vw); }
 
 #cart_title { padding: 4vw; }
@@ -52,8 +52,8 @@ header.scrolled {height: 3.375rem; }
     right: -100%;
     transition: all .35s ease-in-out;
     padding: 4rem 3vw 3vw 3vw;
-    /* visibility: hidden; */
 }
+
 .mobile_menu_active { transform: translateX(-100%); }
 .mobile_nav a {
     display: block;

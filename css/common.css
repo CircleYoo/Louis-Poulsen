@@ -470,7 +470,7 @@ main #title_mobile { display: none;}
     overflow: hidden;
     position: absolute;
     /* right: calc(50vw + 35rem); */
-    top: calc(50vh - 15rem);
+    top: 26%;
     width: 10rem;
 }
 
