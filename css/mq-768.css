@@ -28,7 +28,7 @@ header.scrolled {height: 3.375rem; }
 #search_bar button i { font-size: 1.5rem; }
 
 /* section Cart style sheet */
-#cart { width: 100%; right: -100vw; }
+#cart { width: 100%; right: -100%; }
 .cart_active { transform: translateX(-100vw); }
 
 #cart_title { padding: 4vw; }
@@ -319,7 +319,7 @@ footer #f_low_bottom {
 #f_small { padding-left: 3vw; }
 #f_low_bottom > span {
     border-top: 1px solid #b5b5b5;
-    font-size: 7.8vw;
+    font-size: 9vw;
     margin-top: 3rem;
     padding: 1rem 0;
     text-align: center;

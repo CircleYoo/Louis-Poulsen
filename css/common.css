@@ -11,6 +11,7 @@ body::-webkit-scrollbar { display: none; }
 body { 
     -webkit-transition: 0.35s;
     -moz-transition: 0.35s;  
+    width: 100%;
     overflow-x: hidden;
     position: relative;     
     transition: 0.35s ease-in-out;
@@ -48,11 +49,12 @@ button {
 #header {
     display: flex;
     flex-direction: column;
-    left: 0;
+    /* left: 0; */
     position:fixed;
     top: 0;
-    right: 0;
+    /* right: 0; */
     z-index: 210;
+    width: 100vw;
 }
 
 /* aside style sheet */
@@ -93,7 +95,7 @@ header {
     height: 8.75rem;
     justify-content: space-between;
     left: 0;
-    padding: 0 9vw;
+    padding: 0 2.5rem;
     width: 100%;
     z-index: 99;
 
@@ -155,7 +157,7 @@ header.scrolled {
     display: flex;
     height: 5rem;
     left: 0;
-    padding: 1rem 9vw;
+    padding: 1rem 2.5rem;
 
     /* transition: all .15s ease-in-out; */
     /* opacity: 1; */
@@ -746,7 +748,7 @@ main #title_mobile { display: none;}
 
 
 /* con9 : susability - style sheet */
-#con9 { position: relative;  width: 100%; }
+#con9 { position: relative;  width: 100%; overflow: hidden;}
 
 /* con9 video wrapper - style sheet */
 #con9_video_wrapper { position: relative; }
@@ -849,7 +851,7 @@ footer #f_row_top {
     grid-template-columns: 1fr 1fr;
     gap: 9rem;
     justify-content: space-between;
-    padding: 4rem 9vw;
+    padding: 4rem 2.5rem;
 }
 
 /* f_row_top style sheet */
@@ -911,7 +913,7 @@ footer #f_low_bottom {
     border-top: 1px solid #b5b5b5;
     display: flex;
     justify-content: space-between;
-    padding: 2rem 9vw;
+    padding: 2rem 2.5rem;
 }
 footer #f_small a {
     color: #8c8c8c;
