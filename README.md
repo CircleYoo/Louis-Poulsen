@@ -1,2 +1,2 @@
 # LouisPoulsen
-https://github.com/CircleYoo/LouisPoulsen/settings/pages
+https://circleyoo.github.io/LouisPoulsen/
