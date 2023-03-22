@@ -17,3 +17,5 @@
 > `JavaScript(ES6)` <br/>
   `HTML5` <br/>
   `CSS3`
+
+## ✔ 주요기능
