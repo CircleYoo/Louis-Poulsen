@@ -1,7 +1,7 @@
 # Louis-Poulsen
 
 조명브랜드 louis poulsen 웹사이트를 리디자인 <br/>
-**배포주소** <https://circleyoo.github.io/LouisPoulsen/>
+**배포주소** : <https://circleyoo.github.io/LouisPoulsen/>
 
 
 ### 💼 작업기간
