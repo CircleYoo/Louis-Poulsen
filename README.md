@@ -14,6 +14,6 @@
 > 황보규림 : 제품페이지, 상세페이지
 
 ### ⚙ 개발환경
-> JavaScript(ES6)
-> HTML5
-> CSS3
+> `JavaScript(ES6)`
+> `HTML5`
+> `CSS3`
