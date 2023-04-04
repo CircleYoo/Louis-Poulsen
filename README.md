@@ -3,7 +3,7 @@
 조명브랜드 louis poulsen 웹사이트를 깔끔하고 감성적인 아이덴티티를 살려 리디자인했습니다. <br/>
 **배포주소** : <https://circleyoo.github.io/LouisPoulsen/> <br/> <br/>
 
-![poster](assets/readme.git)
+![poster](https://github.com/CircleYoo/LouisPoulsen/blob/main/assets/readme.gif)
 
 
 ### 💼 작업기간
