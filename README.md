@@ -1,4 +1,4 @@
-# Louis_Poulsen
+# Louis-Poulsen
 
 조명브랜드 louis poulsen 웹사이트를 리디자인
 <https://circleyoo.github.io/LouisPoulsen/>
