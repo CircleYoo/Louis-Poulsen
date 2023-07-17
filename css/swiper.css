@@ -18,10 +18,10 @@
 
 .swiper-button-prev:after,
 .swiper-container-rtl .swiper-button-next:after {
-  content: url('img/con2/con2-prev-arrow.svg');
+  content: url("img/index/con2/con2-prev-arrow.svg");
 }
 
 .swiper-button-next:after,
 .swiper-container-rtl .swiper-button-prev:after {
-  content: url('img/con2/con2-next-arrow.svg');
+  content: url("img/index/con2/con2-next-arrow.svg");
 }

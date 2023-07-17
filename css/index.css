@@ -1,8 +1,7 @@
-
 /* main */
 /* main_con style sheet */
 #main_con {
-  background-image: url(../img/main/main-bg.jpg);
+  background-image: url(../img/index/main/main-bg.jpg);
   background-attachment: fixed;
   background-size: cover;
   background-position: bottom;
@@ -420,8 +419,17 @@ main #title_mobile {
   height: 100%;
   object-fit: cover;
   position: absolute;
-  transition: all 0.25s ease-in-out;
   width: 100%;
+  animation: fade-out 0.5s ease-in-out;
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /* con6 : let light~ - style sheet */

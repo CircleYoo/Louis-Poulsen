@@ -2,7 +2,7 @@
 /* main_con style sheet */
 #main_con { 
     padding: 6rem 11.5vw 4rem; 
-    background-image: url(../img/main/main-mobile-bg.jpg);
+    background-image: url(../img/index/main/main-mobile-bg.jpg);
     background-position: right;
 }
 main .title_row > span, 

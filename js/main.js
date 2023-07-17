@@ -1,7 +1,6 @@
 (function () {
   "use strict";
 
-
   // main title 글자 색 + 이미지 변경
   const shapeColor = document.querySelector("#shape");
   const objImg = document.querySelector("#main_png > img");
@@ -36,7 +35,7 @@
     "table",
     "wall",
     "outdoor",
-    "spare"
+    "spare",
   ];
 
   con3btn.forEach((item, index) => {
@@ -65,7 +64,9 @@
             <img src="${item.leftImg}" alt="">
             <div class="con3_desc">
               <p id="con3_name_left">${item.leftNm}</p>
-              <p id="con3_price_left">₩ ${item.leftPrice.toLocaleString("ko-KR")}</p>
+              <p id="con3_price_left">₩ ${item.leftPrice.toLocaleString(
+                "ko-KR"
+              )}</p>
             </div>
           </div>
         </div>
@@ -74,7 +75,9 @@
             <img src="${item.rightImg}" alt="">
             <div class="con3_desc">
               <p id="con3_name_right">${item.rightNm}</p>
-              <p id="con3_price_right">₩ ${item.rightPrice.toLocaleString("ko-KR")}</p>
+              <p id="con3_price_right">₩ ${item.rightPrice.toLocaleString(
+                "ko-KR"
+              )}</p>
             </div>
           </div>
         </div>
@@ -88,55 +91,34 @@
 
   // con5 new arrivals - mouseover
   const $con5 = document.querySelector("#con5");
-  const $con5Img = document.querySelector(".con5_img_wrapper img");
-  const newList1 = document.querySelector("#con5_li_1 a");
-  const newList2 = document.querySelector("#con5_li_2 a");
-  const newList3 = document.querySelector("#con5_li_3 a");
-  const newList4 = document.querySelector("#con5_li_4 a");
-  const newList5 = document.querySelector("#con5_li_5 a");
+  const swCon5ImgWrapper = document.querySelector(".con5_img_wrapper");
+  const arrivalItems = document.querySelectorAll("#con5 ul li");
 
-  newList1.addEventListener("mouseenter", () => {
-    $con5.style.backgroundColor = "#f9d0d0";
-  });
-  newList1.addEventListener("mouseleave", () => {
-    $con5.style.backgroundColor = "";
-  });
+  let arrivalData;
+  fetch("data/newArrival.json")
+    .then((response) => response.json())
+    .then((result) => {
+      arrivalData = result;
+      makeArrivalSlide(arrivalData[0]); // 초기 이미지
+      $con5.style.backgroundColor = "#f9f8f2"; // 초기 배경색
+    })
+    .catch((error) => console.log("데이터 가져오기 실패", error));
 
-  newList2.addEventListener("mouseenter", () => {
-    $con5.style.backgroundColor = "#b4ccd9";
-    $con5Img.src = "img/index/con5/con5-02.jpg";
-  });
-  newList2.addEventListener("mouseleave", () => {
-    $con5.style.backgroundColor = "";
-    $con5Img.src = "img/index/con5/con5-01.jpg";
+  
+  arrivalItems.forEach((item, index) => {
+    item.addEventListener("mouseover", () => {
+      let updateImg = arrivalData[index];
+      makeArrivalSlide(updateImg)
+    });
   });
 
-  newList3.addEventListener("mouseenter", () => {
-    $con5.style.backgroundColor = "#a14102";
-    $con5Img.src = "img/index/con5/con5-03.jpg";
-  });
-  newList3.addEventListener("mouseleave", () => {
-    $con5.style.backgroundColor = "";
-    $con5Img.src = "img/index/con5/con5-01.jpg";
-  });
-
-  newList4.addEventListener("mouseenter", () => {
-    $con5.style.backgroundColor = "#f8f8fa";
-    $con5Img.src = "img/index/con5/con5-04.jpg";
-  });
-  newList4.addEventListener("mouseleave", () => {
-    $con5.style.backgroundColor = "";
-    $con5Img.src = "img/index/con5/con5-01.jpg";
-  });
-
-  newList5.addEventListener("mouseenter", () => {
-    $con5.style.backgroundColor = "#702920";
-    $con5Img.src = "img/index/con5/con5-05.jpg";
-  });
-  newList5.addEventListener("mouseleave", () => {
-    $con5.style.backgroundColor = "";
-    $con5Img.src = "img/index/con5/con5-01.jpg";
-  });
+  function makeArrivalSlide(data) {
+    let con5Html = `
+      <img src="${data.img}" alt="new arrival" />
+    `;
+    $con5.style.backgroundColor = data.color;
+    swCon5ImgWrapper.innerHTML = con5Html;
+  };
 
   // con7 store - mouseover
   const $store = document.querySelectorAll("#con7_store > a");
