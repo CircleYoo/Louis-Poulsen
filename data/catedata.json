@@ -1,60 +1,60 @@
 {
   "pendant" : [
     {
-      "leftImg" : "img/con3/con3-01-01.png",
+      "leftImg" : "img/index/con3/con3-01-01.png",
       "leftNm" : "PH 3½-3 Pale Rose Brass Pendant",
       "leftPrice" : 2624000,
-      "rightImg" : "img/con3/con3-01-02.png",
+      "rightImg" : "img/index/con3/con3-01-02.png",
       "rightNm" : "PH Artichoke",
       "rightPrice" : 19900000
     }
   ],
   "floor" : [
     {
-      "leftImg" : "img/con3/con3-02-01.png",
+      "leftImg" : "img/index/con3/con3-02-01.png",
       "leftNm" : "VL Studio Table/Floor",
       "leftPrice" : 611000,
-      "rightImg" : "img/con3/con3-02-02.png",
+      "rightImg" : "img/index/con3/con3-02-02.png",
       "rightNm" : "Moonsetter",
       "rightPrice" : 12314000
     }
   ],
   "table" : [
     {
-      "leftImg" : "img/con3/con3-03-01.png",
+      "leftImg" : "img/index/con3/con3-03-01.png",
       "leftNm" : "Panthella Table 320",
       "leftPrice" : 513000,
-      "rightImg" : "img/con3/con3-03-02.png",
+      "rightImg" : "img/index/con3/con3-03-02.png",
       "rightNm" : "AJ Mini Table",
       "rightPrice" : 1338000
     }
   ],
   "wall" : [
     {
-      "leftImg" : "img/con3/con3-04-01.png",
+      "leftImg" : "img/index/con3/con3-04-01.png",
       "leftNm" : "Flindt Wall",
       "leftPrice" : 1111000,
-      "rightImg" : "img/con3/con3-04-02.png",
+      "rightImg" : "img/index/con3/con3-04-02.png",
       "rightNm" : "NJP Wall",
       "rightPrice" : 580000
     }
   ],
   "outdoor" : [
     {
-      "leftImg" : "img/con3/con3-05-01.png",
+      "leftImg" : "img/index/con3/con3-05-01.png",
       "leftNm" : "Toldbod 6.1 Wall",
       "leftPrice" : 989000,
-      "rightImg" : "img/con3/con3-05-02.png",
+      "rightImg" : "img/index/con3/con3-05-02.png",
       "rightNm" : "Nyhavn Wall",
       "rightPrice" : 2742000
     }
   ],
   "spare" : [
     {
-      "leftImg" : "img/con3/con3-06-01.png",
+      "leftImg" : "img/index/con3/con3-06-01.png",
       "leftNm" : "PH 3½-2½ GLASS Shade",
       "leftPrice" : 1684000,
-      "rightImg" : "img/con3/con3-06-02.png",
+      "rightImg" : "img/index/con3/con3-06-02.png",
       "rightNm" : "Albertslund LED Upgrade Kit",
       "rightPrice" : 989000
     }

@@ -8,11 +8,11 @@
 
   let colorArr = ["#055e52", "#f9a02d", "#7eac63", "#ee6f65", "#a16842"];
   let imgArr = new Array();
-  imgArr[0] = "img/main/main-01.png";
-  imgArr[1] = "img/main/main-02.png";
-  imgArr[2] = "img/main/main-03.png";
-  imgArr[3] = "img/main/main-04.png";
-  imgArr[4] = "img/main/main-05.png";
+  imgArr[0] = "img/index/main/main-01.png";
+  imgArr[1] = "img/index/main/main-02.png";
+  imgArr[2] = "img/index/main/main-03.png";
+  imgArr[3] = "img/index/main/main-04.png";
+  imgArr[4] = "img/index/main/main-05.png";
 
   let imgIdx = 0;
   let idx = 0;
@@ -104,38 +104,38 @@
 
   newList2.addEventListener("mouseenter", () => {
     $con5.style.backgroundColor = "#b4ccd9";
-    $con5Img.src = "img/con5/con5-02.jpg";
+    $con5Img.src = "img/index/con5/con5-02.jpg";
   });
   newList2.addEventListener("mouseleave", () => {
     $con5.style.backgroundColor = "";
-    $con5Img.src = "img/con5/con5-01.jpg";
+    $con5Img.src = "img/index/con5/con5-01.jpg";
   });
 
   newList3.addEventListener("mouseenter", () => {
     $con5.style.backgroundColor = "#a14102";
-    $con5Img.src = "img/con5/con5-03.jpg";
+    $con5Img.src = "img/index/con5/con5-03.jpg";
   });
   newList3.addEventListener("mouseleave", () => {
     $con5.style.backgroundColor = "";
-    $con5Img.src = "img/con5/con5-01.jpg";
+    $con5Img.src = "img/index/con5/con5-01.jpg";
   });
 
   newList4.addEventListener("mouseenter", () => {
     $con5.style.backgroundColor = "#f8f8fa";
-    $con5Img.src = "img/con5/con5-04.jpg";
+    $con5Img.src = "img/index/con5/con5-04.jpg";
   });
   newList4.addEventListener("mouseleave", () => {
     $con5.style.backgroundColor = "";
-    $con5Img.src = "img/con5/con5-01.jpg";
+    $con5Img.src = "img/index/con5/con5-01.jpg";
   });
 
   newList5.addEventListener("mouseenter", () => {
     $con5.style.backgroundColor = "#702920";
-    $con5Img.src = "img/con5/con5-05.jpg";
+    $con5Img.src = "img/index/con5/con5-05.jpg";
   });
   newList5.addEventListener("mouseleave", () => {
     $con5.style.backgroundColor = "";
-    $con5Img.src = "img/con5/con5-01.jpg";
+    $con5Img.src = "img/index/con5/con5-01.jpg";
   });
 
   // con7 store - mouseover
