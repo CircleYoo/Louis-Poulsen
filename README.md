@@ -1,7 +1,7 @@
 # Louis-Poulsen
 
 조명브랜드 louis poulsen - 웹사이트 반응형 리디자인<br/>
-**배포주소** : <https://circleyoo.github.io/LouisPoulsen/> <br/> <br/>
+**배포주소** : https://circleyoo.github.io/Louis-Poulsen/ <br/> <br/>
 
 ![poster](https://github.com/CircleYoo/LouisPoulsen/blob/main/assets/reponsive.png)
 
