@@ -1,6 +1,22 @@
 (function () {
   ("use strict");
 
+  //상단버튼//
+  const topBtn = document.querySelector("#goTop");
+  topBtn.onclick = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  //하단버튼//
+  const $bottomBtn = document.querySelector("#goDown");
+
+  $bottomBtn.onclick = () => {
+    window.scrollTo({
+      top: document.body.scrollHeight - 1000,
+      behavior: "smooth",
+    });
+  };
+
   // 스크롤 시 header 높이 줄이기
   const $header = document.querySelector("header");
   const $logoImg = document.querySelector("#logo_img");

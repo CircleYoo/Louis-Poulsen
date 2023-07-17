@@ -16,25 +16,6 @@ footer {
 
 /* PC (해상도 1024px)*/
 @media all and (min-width: 1024px) {
-  /* 위로이동 */
-  .upper {
-    position: fixed;
-    bottom: 20px;
-    right: 30px;
-    animation: up-down 0.35s infinite ease-in-out alternate;
-    width: 75px;
-  }
-
-  @keyframes up-down {
-    from {
-      transform: translatey(0px);
-    }
-
-    to {
-      transform: translatey(-7px);
-    }
-  }
-
   .title {
     width: 100%;
     height: 27.5rem;
@@ -316,25 +297,6 @@ footer {
 
 /* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/
 @media all and (min-width: 768px) and (max-width: 1023px) {
-  /* 위로이동 */
-  .upper {
-    position: fixed;
-    bottom: 20px;
-    right: 30px;
-    animation: up-down 0.35s infinite ease-in-out alternate;
-    width: 65px;
-  }
-
-  @keyframes up-down {
-    from {
-      transform: translatey(0px);
-    }
-
-    to {
-      transform: translatey(-7px);
-    }
-  }
-
   .title {
     width: 100%;
     /* 높이 좀 줄임 */
@@ -630,11 +592,7 @@ footer {
     /* 로케이터 수정필요 */
     background-color: #8f3a37;
   }
-
-  .upper {
-    display: none;
-  }
-
+  
   .title h1 {
     font-family: "Karla", sans-serif;
     font-weight: 400;

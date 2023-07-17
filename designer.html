@@ -18,14 +18,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- 아이콘 -->
 
+    <!-- 아이콘 -->
     <script
       src="https://kit.fontawesome.com/366b35783b.js"
       crossorigin="anonymous"
     ></script>
-    <!-- 폰트 -->
 
+    <!-- 폰트 -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -51,18 +51,28 @@
 
   <body style="overflow-x: hidden">
     <div class="cursor"></div>
+    <section class="goDir">
+      <button class="dirBtn" id="goTop">
+        <i class="fa-solid fa-chevron-up"></i>
+        <!-- <img src="img/acc/top.png" alt="top" /> -->
+      </button>
+      <button class="dirBtn" id="goDown">
+        <i class="fa-solid fa-chevron-down"></i>
+        <!-- <img src="img/acc/down.png" alt="down" /> -->
+      </button>
+    </section>
 
     <!-- 헤더(정원) -->
     <div id="header">
       <div class="cart_overlay"></div>
       <aside>
-            <a href="https://brand.naver.com/louispoulsen" target="_blank">
-                <p>첫번째 브랜드 스토어 오픈</p>
-            </a>
-                <button type="button">
-                    <img src="img/etc/topLinkBar-button-x.svg" alt="">
-            </button>
-        </aside>
+        <a href="https://brand.naver.com/louispoulsen" target="_blank">
+          <p>첫번째 브랜드 스토어 오픈</p>
+        </a>
+        <button type="button">
+          <img src="img/etc/topLinkBar-button-x.svg" alt="" />
+        </button>
+      </aside>
 
       <header>
         <div class="logo">
@@ -442,10 +452,6 @@
         <span>빛의 형태를 디자인하다</span>
       </section>
     </footer>
-    <!-- 위로가기 -->
-    <div class="upper">
-      <a href="#top"><img src="./img/designer/상단으로.png" alt="" /></a>
-    </div>
 
     <!-- 스크립트  -->
     <script src="js/common.js"></script>

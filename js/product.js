@@ -42,18 +42,6 @@
     });
 
 
-    //상단버튼//
-    const topBtn = document.querySelector(".gototop");
-      topBtn.onclick = () => {
-      window.scrollTo({ top: 0, behavior: "smooth" });  
-      };
-
-    //하단버튼//
-    const $bottomBtn = document.querySelector(".gotodown");
-
-      $bottomBtn.onclick = () => {
-      window.scrollTo({ top: document.body.scrollHeight-1000, behavior: "smooth" });
-    };
 
     //필터 드롭다운//
     function dp_menu_02(){

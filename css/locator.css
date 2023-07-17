@@ -20,38 +20,9 @@ header.scrolled,
 footer {
   background-color: #f8f6f5;
 }
-/* @upper 키프레임 */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
 
 /* PC (해상도 1024px 이상)*/
 @media all and (min-width: 1400px) {
-  /* 위로이동 */
-  .upper {
-    position: fixed;
-    bottom: 20px;
-    right: 30px;
-    animation: up-down 0.35s infinite ease-in-out alternate;
-    width: 75px;
-  }
-
-  @keyframes up-down {
-    from {
-      transform: translatey(0px);
-    }
-
-    to {
-      transform: translatey(-7px);
-    }
-  }
-
   /* STORE LOCATOR 시작 */
 
   /* titles*/
@@ -396,25 +367,6 @@ footer {
 
 /* 🚩PC와 태블렛 중간 (해상도 992px ~ 1199px)*/
 @media (min-width: 992px) and (max-width: 1399px) {
-  /* 위로이동 */
-  .upper {
-    position: fixed;
-    bottom: 20px;
-    right: 30px;
-    animation: up-down 0.35s infinite ease-in-out alternate;
-    width: 70px;
-  }
-
-  @keyframes up-down {
-    from {
-      transform: translatey(0px);
-    }
-
-    to {
-      transform: translatey(-7px);
-    }
-  }
-
   .title {
     width: 100%;
     /* 높이 좀 줄임 */
@@ -752,25 +704,6 @@ footer {
 /*🚩태블릿 미디어쿼리*/
 
 @media (min-width: 768px) and (max-width: 991px) {
-  /* 위로이동 */
-  .upper {
-    position: fixed;
-    bottom: 20px;
-    right: 30px;
-    animation: up-down 0.35s infinite ease-in-out alternate;
-    width: 65px;
-  }
-
-  @keyframes up-down {
-    from {
-      transform: translatey(0px);
-    }
-
-    to {
-      transform: translatey(-7px);
-    }
-  }
-
   .title {
     width: 100%;
     /* 높이 좀 줄임 */
@@ -1107,10 +1040,6 @@ footer {
 /* 🚩모바일 미디어쿼리 */
 
 @media screen and (max-width: 767px) {
-  .upper {
-    display: none;
-  }
-
   .title {
     width: 100%;
     /* 높이 좀 줄임 */
