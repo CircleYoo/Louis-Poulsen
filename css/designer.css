@@ -7,6 +7,9 @@ html {
     scroll-behavior: smooth;
 }
 
+header {
+  background-color: #fafaf8;
+}
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500&family=Noto+Sans+KR:wght@400;500&display=swap');
 
 
@@ -362,7 +365,7 @@ html {
 
     }
 
-    h1 {
+    .title h1 {
       font-family: 'Karla', sans-serif;
       font-weight: 400;
       font-size: 5.5rem;
@@ -672,7 +675,7 @@ html {
       display: none;
     }
 
-    h1 {
+    .title h1 {
       font-family: 'Karla', sans-serif;
       font-weight: 400;
       font-size: 3.3rem;

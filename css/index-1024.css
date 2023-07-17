@@ -1,35 +1,5 @@
 /* mq-1024.css */
 
-/* header style sheet */
-#header {
-  width: 100vw;
-}
-
-/* aside style sheet */
-aside button {
-  right: 2.5rem;
-}
-
-/* header-con style sheet */
-header {
-  gap: 2.5vw;
-  height: 7.5rem;
-  padding: 0 4vw;
-}
-
-/* search_bar style sheet */
-#search_bar {
-  padding: 1rem 4vw;
-}
-
-/* cart style sheet */
-#cart {
-  right: -450px;
-  width: 450px;
-}
-.cart_active {
-  transform: translateX(-450px);
-}
 
 /* main */
 /* main_con style sheet */
@@ -332,51 +302,4 @@ main #main_png {
 #con10 .post_row a h3 {
   font-size: 1.125rem;
   letter-spacing: -0.8px;
-}
-
-/* footer style sheet */
-footer #f_row_top {
-  gap: 0;
-  padding: 4rem 4vw;
-}
-
-/* f_row_top style sheet */
-#f_row_top #newsletter {
-  padding-right: 7vw;
-}
-#newsletter > h1 {
-  font-size: 3.7vw;
-  letter-spacing: -1.8px;
-}
-#newsletter .email_wrapper {
-  padding: 0 1rem;
-}
-
-#newsletter .email_wrapper input,
-#newsletter .email_wrapper i {
-  font-size: 1rem;
-}
-
-footer #footer_links h3 {
-  font-size: 1.8vw;
-}
-footer #footer_links li {
-  font-size: 1.6vw;
-}
-
-/* f_low_bottom style sheet */
-footer #f_low_bottom {
-  padding: 2rem 4vw;
-}
-footer #f_small a {
-  color: #8c8c8c;
-  font-size: 0.625vw;
-  letter-spacing: -0.6px;
-}
-footer #f_small a:not(:last-child) {
-  padding-right: 1.6vw;
-}
-#f_low_bottom > span {
-  font-size: 5.8vw;
-  letter-spacing: -3px;
 }

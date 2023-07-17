@@ -30,7 +30,7 @@
     <link rel="icon" href="img/logo.png" type="image/x-icon">
     
     <!-- css -->
-    <link rel="stylesheet" href="css/y-common.css">
+    <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/locator.css">
 
     <meta name="author" content="yerikim">
@@ -42,117 +42,108 @@
 <body style="overflow-x: hidden">
 
   <!-- 헤더(정원) -->
-  <div id="header">
-    <div class="cart_overlay"></div>
-    <!-- <aside>
-        <a href="https://brand.naver.com/louispoulsen" target="_blank">
-            <p>첫번째 브랜드 스토어 오픈</p>
-        </a>
-            <button type="button">
-                <img src="img/etc/topLinkBar-button-x.svg" alt="">
-        </button>
-    </aside> -->
+  <section id="header">
+      <div class="cart_overlay"></div>
+      <header>
+          <div class="logo">
+              <a href="index.html">
+                  <img src="img/header/louispoulsen-logo.png" alt="루이스폴센 로고" id="logo_img">
+              </a>
+              <a href="index.html">
+                  <img src="img/header/louispoulsen-logo-mini.png" alt="루이스폴센 로고" id="logo_img_mini">
+              </a>
+          </div>
+          <div class="main_menu">
+              <nav class="main_nav">
+                  <a href="product.html">PRODUCTS</a>
+                  <a href="designer.html">DESIGNERS</a>
+              </nav>
+              <nav class="main_service">
+                  <a href="index.html">About</a>
+                  <a href="index.html">Professional</a>
+                  <a href="locator.html">Location</a>
+              </nav>
+              <div class="main_icon">
+                  <button>
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                      <img src="img/header/header-xBtn.svg" class="header_xBtn" >
+                  </button>
+                  <button><i class="fa-solid fa-cart-shopping"></i></button>
+                  <button id="mobile_btn">
+                      <i class="fa-solid fa-bars"></i>
+                      <!-- <i class="fa-solid fa-xmark"></i> -->
+                  </button>
+                  
+              </div>
+          </div>
+      </header>
 
-    <header>
-        <div class="logo">
-            <a href="index.html">
-                <img src="img/header/louispoulsen-logo.png" alt="루이스폴센 로고" id="logo_img">
-            </a>
-            <a href="index.html">
-                <img src="img/header/louispoulsen-logo-mini.png" alt="루이스폴센 로고" id="logo_img_mini">
-            </a>
-        </div>
-        <div class="main_menu">
-            <nav class="main_nav">
-                <a href="">PRODUCTS</a>
-                <a href="">DESIGNERS</a>
-            </nav>
-            <nav class="main_service">
-                <a href="">About</a>
-                <a href="">Professional</a>
-                <a href="">Location</a>
-            </nav>
-            <div class="main_icon">
-                <button>
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <img src="img/header/header-xBtn.svg" class="header_xBtn" >
-                </button>
-                <button><i class="fa-solid fa-cart-shopping"></i></button>
-                <button id="mobile_btn">
-                    <i class="fa-solid fa-bars"></i>
-                    <!-- <i class="fa-solid fa-xmark"></i> -->
-                </button>
-                
-            </div>
-        </div>
-    </header>
+      <form id="search_bar" onsubmit="return false;" class="search_close">
+          <input type="search" placeholder="Search" type="text" >
+          <button>
+              <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+      </form>
 
-    <form id="search_bar" onsubmit="return false;" class="search_close">
-        <input type="search" placeholder="Search" type="text" >
-        <button>
-            <i class="fa-solid fa-magnifying-glass"></i>
-        </button>
-    </form>
+      <section id="cart">
+          <div>
+              <div id="cart_title">
+                  <h1>Shopping Cart</h1>
+                  <button>
+                      <img src="img/etc/cart-xBtn.svg" alt="">
+                  </button>
+              </div>
+              <div id="cart_list">
+                  <img src="img/etc/cart-product.png" alt="">
+                  <div id="cart_list_info">
+                      <div id="cart_text">
+                          <div>
+                              <h2>PH 5</h2>
+                              <p>
+                                  Monochrome Copper, 
+                                  1x22W A-21/medium, -
+                              </p>
+                          </div>
+                          <button>
+                              <i class="fa-solid fa-xmark"></i>
+                          </button>
+                      </div>
+                      <div id="cart_list_cnt">
+                          <div id="cart_list_btn">
+                              <button id="increase">
+                                  <i class="fa-solid fa-plus"></i>
+                              </button>
+                              <span id="counter">1</span>
+                              <button id="decrease">
+                                  <i class="fa-solid fa-minus"></i>
+                              </button>
+                          </div>
+                          <p id="list_total">2,624,000<small>원</small></p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div id="cart_buy">
+              <div id="cart_buy_info">
+                  <h2>합계 금액</h2>
+                  <p>2,624,000<small>원</small></p>
+              </div>
+              <button>구매하기</button>
+          </div>
+      </section>
 
-    <section id="cart">
-        <div>
-            <div id="cart_title">
-                <h1>Shopping Cart</h1>
-                <button>
-                    <img src="img/etc/cart-xBtn.svg" alt="">
-                </button>
-            </div>
-            <div id="cart_list">
-                <img src="img/etc/cart-product.png" alt="">
-                <div id="cart_list_info">
-                    <div id="cart_text">
-                        <div>
-                            <h2>PH 5</h2>
-                            <p>
-                                Monochrome Copper, 
-                                1x22W A-21/medium, -
-                            </p>
-                        </div>
-                        <button>
-                            <i class="fa-solid fa-xmark"></i>
-                        </button>
-                    </div>
-                    <div id="cart_list_cnt">
-                        <div id="cart_list_btn">
-                            <button id="increase">
-                                <i class="fa-solid fa-plus"></i>
-                            </button>
-                            <span id="counter">1</span>
-                            <button id="decrease">
-                                <i class="fa-solid fa-minus"></i>
-                            </button>
-                        </div>
-                        <p id="list_total">2,624,000<small>원</small></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="cart_buy">
-            <div id="cart_buy_info">
-                <h2>합계 금액</h2>
-                <p>2,624,000<small>원</small></p>
-            </div>
-            <button>구매하기</button>
-        </div>
-    </section>
-
-    <section id="mobile_menu">
-        <nav class="mobile_nav">
-            <a href=""><span>PRODUCTS</span></a>
-            <a href=""><span>DESIGNERS</span></a>
-        </nav>
-        <nav class="mobile_service">
-            <a href=""><span>About</span></a>
-            <a href=""><span>Professional</span></a>
-            <a href=""><span>Location</span></a>
-        </nav>
-    </section>
-</div>
+      <section id="mobile_menu">
+          <nav class="mobile_nav">
+              <a href="product.html"><span>PRODUCTS</span></a>
+              <a href="designer.html"><span>DESIGNERS</span></a>
+          </nav>
+          <nav class="mobile_service">
+              <a href="index.html"><span>About</span></a>
+              <a href="index.html"><span>Professional</span></a>
+              <a href="locator.html"><span>Location</span></a>
+          </nav>
+      </section>
+  </section>
 
 
   <!-- 지도 페이지 내용 시작 -->
@@ -331,7 +322,7 @@
 
   <!-- 스크립트  -->
   <script src="js/map.js"></script>
-  <script src="js/main.js"></script>
+  <script src="js/common.js"></script>
   <script
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAid87rRXLk0Cpt-Vr_W0IVTizHcpg6nD0&callback=initMap&libraries=places&v=weekly&radius=5000">
   </script>
