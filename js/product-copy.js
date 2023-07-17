@@ -157,7 +157,7 @@
     let lampList = null;
 
     function getData() {
-        fetch('js/catalog.json')
+        fetch('data/catalog.json')
         .then(res => res.json())
         .then(result2 => {
             catalogItem = result2;

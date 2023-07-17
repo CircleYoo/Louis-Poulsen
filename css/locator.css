@@ -1,11 +1,7 @@
 /* 폰트 */
-
-@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500&family=Noto+Sans+KR:wght@400;500&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500&family=Noto+Sans+KR:wght@400;500&display=swap");
 
 /* MAIN */
-
 html {
   scroll-behavior: smooth;
 }
@@ -19,6 +15,11 @@ main {
   margin: 0;
 }
 
+header,
+header.scrolled,
+footer {
+  background-color: #f8f6f5;
+}
 /* @upper 키프레임 */
 @keyframes fadeIn {
   from {
@@ -31,16 +32,14 @@ main {
 }
 
 /* PC (해상도 1024px 이상)*/
-@media all and (min-width:1400px) {
-
+@media all and (min-width: 1400px) {
   /* 위로이동 */
   .upper {
     position: fixed;
     bottom: 20px;
     right: 30px;
-    animation: up-down .35s infinite ease-in-out alternate;
+    animation: up-down 0.35s infinite ease-in-out alternate;
     width: 75px;
-
   }
 
   @keyframes up-down {
@@ -53,8 +52,6 @@ main {
     }
   }
 
-
-
   /* STORE LOCATOR 시작 */
 
   /* titles*/
@@ -65,11 +62,10 @@ main {
     /* padding: 171px 1274px 53px 173px; */
     background-color: #73629a;
     position: relative;
-
   }
 
   main .title h1 {
-    font-family: 'Karla', sans-serif;
+    font-family: "Karla", sans-serif;
     font-weight: 400;
     font-size: 7.45rem;
     letter-spacing: -0.4481rem;
@@ -80,9 +76,8 @@ main {
     padding-left: 10rem;
   }
 
-
   .title__two {
-    font-family: 'Karla', sans-serif;
+    font-family: "Karla", sans-serif;
     font-size: 4.5rem;
     letter-spacing: -0.27rem;
     /* padding: 10.9375rem 0 2.375rem 10.9375rem; */
@@ -97,7 +92,6 @@ main {
     overflow: hidden;
 
     margin: 6.25rem 10.9375rem;
-
   }
 
   /*로케이션 검색 */
@@ -107,11 +101,10 @@ main {
     /* width: 34.625rem; */
     grid-column: 1/2;
     grid-row: 1/2;
-
   }
 
   .pac-target-input {
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: "Noto Sans KR", sans-serif;
     height: 3.75rem;
     width: 100%;
     font-weight: 700;
@@ -119,12 +112,9 @@ main {
     border: 0;
     /* padding: .625rem .625rem .875rem 0; */
     background-color: #f8f6f5;
-
   }
 
   /* 로케이션 검색창 */
-
-
 
   #autocomplete {
     width: 100%;
@@ -133,7 +123,6 @@ main {
 
   #autocomplete:focus {
     outline: 0;
-
   }
 
   #locationField {
@@ -145,9 +134,7 @@ main {
     grid-template-columns: 10fr 1fr;
   }
 
-
   /* 도시를 입력하세요 옆 검색 아이콘 */
-
 
   .ornament {
     width: 60px;
@@ -161,37 +148,31 @@ main {
     font-size: 1.6rem;
   }
 
-
-
   /*지도 옆 매장 리스트 시작 */
 
   /* 스크롤바 */
   #listing {
     overflow-y: scroll;
-    border-bottom: .0313rem solid #64606b;
-
+    border-bottom: 0.0313rem solid #64606b;
   }
 
   #listing::-webkit-scrollbar {
     width: 1.25rem;
-    ;
   }
 
   #listing::-webkit-scrollbar-track {
     background-color: #f8f6f5;
-    border-right: .0625rem solid #64606b;
-    border-left: .0625rem solid #64606b;
+    border-right: 0.0625rem solid #64606b;
+    border-left: 0.0625rem solid #64606b;
     border-bottom: 0;
-
   }
 
   #listing::-webkit-scrollbar-thumb {
     border: 1px solid #64606b;
-    width: .9375rem;
+    width: 0.9375rem;
     background-color: rgb(90, 79, 79, 0.1);
     /* box-shadow: inset 0 0 6px rgb(194, 194, 194); */
   }
-
 
   /* 매장 리스트 (각각)*/
   #resultsTable {
@@ -208,7 +189,6 @@ main {
     flex-direction: column;
     justify-content: flex-start;
     flex-wrap: nowrap;
-
   }
 
   #listing {
@@ -219,7 +199,6 @@ main {
     z-index: 10;
     grid-column: 1/2;
     grid-row: 2/3;
-
   }
 
   #listing #results tr {
@@ -228,11 +207,7 @@ main {
     font-family: NotoSansKR;
     /* text-transform: uppercase;
   transition: all 500ms cubic-bezier(0.77, 0, 0.175); */
-
   }
-
-
-
 
   /* 리스트 내용 */
   #listing #results tr h3 {
@@ -250,25 +225,20 @@ main {
     /* font-family: NotoSansKR; */
   }
 
-
-
   /* 리스트 길찾기버튼 .no_button */
   #listing #results tr .no_button {
     width: 6.8125rem;
     height: 1.875rem;
-    font-size: .75rem;
-    padding: .375rem 1.875rem;
+    font-size: 0.75rem;
+    padding: 0.375rem 1.875rem;
     border: 0.5px solid #64606b;
     text-align: center;
     cursor: pointer;
-
   }
 
   #listing #results tr i {
     display: none;
   }
-
-
 
   /* 리스트 호버 */
   #listing #results tr :hover h3 {
@@ -285,17 +255,11 @@ main {
     border: 0;
   }
 
-
-
-
-
-
   /* 지도부분*/
 
   .store-locator__right {
     grid-column: 2/3;
     grid-row: 1/3;
-
   }
 
   #map {
@@ -308,7 +272,7 @@ main {
   #info-content {
     background-color: white;
     color: #73629a;
-    font-family: 'NotoSansKR';
+    font-family: "NotoSansKR";
     letter-spacing: -1px;
     font-weight: 600;
   }
@@ -317,23 +281,18 @@ main {
     color: #73629a;
     background-color: white;
     display: inline-block;
-    margin-bottom: .625rem;
+    margin-bottom: 0.625rem;
     font-size: 1.5625rem;
   }
 
   #info-content table {
-    margin: .625rem;
+    margin: 0.625rem;
   }
-
 
   #iw-icon,
   .iw_attribute_name {
     display: none;
   }
-
-
-
-
 
   /*온라인 호버*/
   .online__stores {
@@ -346,11 +305,10 @@ main {
     border-bottom: 1px solid #a39e9a;
 
     border-spacing: 0;
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: "Noto Sans KR", sans-serif;
     font-size: 2.1rem;
     font-weight: 500;
     letter-spacing: -0.1125rem;
-
   }
 
   /*.online__stores__name {
@@ -372,7 +330,7 @@ main {
   }
 
   .online__stores a:hover {
-    color: #f8f6f5
+    color: #f8f6f5;
   }
 
   .online__stores__name:not(#no_right_line) {
@@ -390,7 +348,6 @@ main {
     margin: 0 auto;
     height: 100%;
     width: 100%;
-
   }
 
   /*==================*/
@@ -422,7 +379,6 @@ main {
   .pop-on-hover:hover,
   .pop-on-hover:focus,
   .pop-on-hover:active {
-
     -webkit-animation-name: pop-on-hover;
     animation-name: pop-on-hover;
     -webkit-animation-duration: 0.3s;
@@ -434,28 +390,19 @@ main {
   }
 
   /* 온라인 호버 끝 */
-
-
-
-
-
-
 }
-
 
 /* 미디어쿼리 총 3개 */
 
 /* 🚩PC와 태블렛 중간 (해상도 992px ~ 1199px)*/
-@media (min-width:992px) and (max-width:1399px) {
-
+@media (min-width: 992px) and (max-width: 1399px) {
   /* 위로이동 */
   .upper {
     position: fixed;
     bottom: 20px;
     right: 30px;
-    animation: up-down .35s infinite ease-in-out alternate;
+    animation: up-down 0.35s infinite ease-in-out alternate;
     width: 70px;
-
   }
 
   @keyframes up-down {
@@ -468,7 +415,6 @@ main {
     }
   }
 
-
   .title {
     width: 100%;
     /* 높이 좀 줄임 */
@@ -476,12 +422,10 @@ main {
     /* 타이틀 배경 해더 높이 따라 수정함 */
     /* 로케이터 수정필요 */
     background-color: #73629a;
-
-
   }
 
-  h1 {
-    font-family: 'Karla', sans-serif;
+  .title h1 {
+    font-family: "Karla", sans-serif;
     font-weight: 400;
     font-size: 5.5rem;
     letter-spacing: -0.5rem;
@@ -494,9 +438,8 @@ main {
     padding-left: 4rem;
   }
 
-
   .title__two {
-    font-family: 'Karla', sans-serif;
+    font-family: "Karla", sans-serif;
     font-size: 4.2rem;
     letter-spacing: -0.27rem;
     padding: 0 0 2.375rem 4rem;
@@ -510,7 +453,6 @@ main {
     overflow: hidden;
 
     margin: 3.5rem 4rem;
-
   }
 
   /*로케이션 검색 */
@@ -521,18 +463,16 @@ main {
     /* width: 25rem; */
     grid-column: 1/2;
     grid-row: 1/2;
-
   }
 
   .pac-target-input {
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: "Noto Sans KR", sans-serif;
     height: 3rem;
     width: 100%;
     font-weight: 500;
     font-size: 1rem;
     border: 0;
     background-color: #f8f6f5;
-
   }
 
   /* 로케이션 검색창 */
@@ -545,7 +485,6 @@ main {
 
   #autocomplete:focus {
     outline: 0;
-
   }
 
   #locationField {
@@ -554,16 +493,12 @@ main {
 
   .hospital-search {
     display: grid;
-    grid-template-columns: 10fr .5fr;
-
+    grid-template-columns: 10fr 0.5fr;
   }
-
 
   /* 도시를 입력하세요 옆 검색 아이콘 */
 
-
   .ornament {
-
     width: 3rem;
     height: 3rem;
 
@@ -576,28 +511,23 @@ main {
     font-size: 1.3rem;
   }
 
-
-
   /*지도 옆 매장 리스트 시작 */
 
   /* 스크롤바 */
   #listing {
     overflow-y: scroll;
-    border-bottom: .0313rem solid #64606b;
-
+    border-bottom: 0.0313rem solid #64606b;
   }
 
   #listing::-webkit-scrollbar {
     width: 1.25rem;
-    ;
   }
 
   #listing::-webkit-scrollbar-track {
     background-color: #f8f6f5;
-    border-right: .0625rem solid #64606b;
-    border-left: .0625rem solid #64606b;
+    border-right: 0.0625rem solid #64606b;
+    border-left: 0.0625rem solid #64606b;
     border-bottom: 0;
-
   }
 
   #listing::-webkit-scrollbar-thumb {
@@ -633,7 +563,6 @@ main {
     z-index: 10;
     grid-column: 1/2;
     grid-row: 2/3;
-
   }
 
   #listing #results tr {
@@ -642,10 +571,7 @@ main {
     font-family: NotoSansKR;
     /* text-transform: uppercase;
   transition: all 500ms cubic-bezier(0.77, 0, 0.175); */
-
   }
-
-
 
   /* 리스트 내용 */
   #listing #results tr h3 {
@@ -663,29 +589,24 @@ main {
     /* font-family: NotoSansKR; */
   }
 
-
-
   /* 리스트 길찾기버튼 .no_button */
   #listing #results tr .no_button {
     width: 6.8125rem;
     height: 1.875rem;
-    font-size: .75rem;
-    padding: .375rem 1.875rem;
+    font-size: 0.75rem;
+    padding: 0.375rem 1.875rem;
     border: 0.5px solid #64606b;
     text-align: center;
-
   }
 
   #listing #results tr i {
     display: none;
   }
 
-
   /* 리스트 호버 */
   #listing #results tr :hover h3 {
     color: #73629a;
     transition: all 0.3s;
-
   }
 
   /* 리스트 길찾기버튼 호버 */
@@ -696,14 +617,11 @@ main {
     border: 0;
   }
 
-
-
   /* 지도부분*/
 
   .store-locator__right {
     grid-column: 2/3;
     grid-row: 1/3;
-
   }
 
   #map {
@@ -716,7 +634,7 @@ main {
   #info-content {
     background-color: white;
     color: #73629a;
-    font-family: 'NotoSansKR';
+    font-family: "NotoSansKR";
     letter-spacing: -1px;
     font-weight: 600;
   }
@@ -725,24 +643,18 @@ main {
     color: #73629a;
     background-color: white;
     display: inline-block;
-    margin-bottom: .625rem;
+    margin-bottom: 0.625rem;
     font-size: 1.5625rem;
   }
 
   #info-content table {
-    margin: .625rem;
+    margin: 0.625rem;
   }
-
 
   #iw-icon,
   .iw_attribute_name {
     display: none;
   }
-
-
-
-
-
 
   /* 온라인 스토어 */
   .online__stores {
@@ -754,11 +666,10 @@ main {
     border-top: 1px solid #a39e9a;
     border-bottom: 1px solid #a39e9a;
     border-spacing: 0;
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: "Noto Sans KR", sans-serif;
     font-size: 1.9rem;
     font-weight: 500;
     letter-spacing: -0.1125rem;
-
   }
 
   .online__stores__bottom {
@@ -776,7 +687,7 @@ main {
   }
 
   .online__stores a:hover {
-    color: #f8f6f5
+    color: #f8f6f5;
   }
 
   .online__stores__name:not(#no_right_line) {
@@ -794,7 +705,6 @@ main {
     margin: 0 auto;
     height: 100%;
     width: 100%;
-
   }
 
   /*==================*/
@@ -826,7 +736,6 @@ main {
   .pop-on-hover:hover,
   .pop-on-hover:focus,
   .pop-on-hover:active {
-
     -webkit-animation-name: pop-on-hover;
     animation-name: pop-on-hover;
     -webkit-animation-duration: 0.3s;
@@ -840,22 +749,15 @@ main {
   /* 온라인 호버 끝 */
 }
 
-
-
-
-
-
-
 /*🚩태블릿 미디어쿼리*/
 
-@media (min-width:768px) and (max-width:991px) {
-
+@media (min-width: 768px) and (max-width: 991px) {
   /* 위로이동 */
   .upper {
     position: fixed;
     bottom: 20px;
     right: 30px;
-    animation: up-down .35s infinite ease-in-out alternate;
+    animation: up-down 0.35s infinite ease-in-out alternate;
     width: 65px;
   }
 
@@ -869,7 +771,6 @@ main {
     }
   }
 
-
   .title {
     width: 100%;
     /* 높이 좀 줄임 */
@@ -877,12 +778,10 @@ main {
     /* 타이틀 배경 해더 높이 따라 수정함 */
     /* 로케이터 수정필요 */
     background-color: #73629a;
-
-
   }
 
   h1 {
-    font-family: 'Karla', sans-serif;
+    font-family: "Karla", sans-serif;
     font-weight: 400;
     font-size: 5rem;
     letter-spacing: -0.4rem;
@@ -895,9 +794,8 @@ main {
     padding-left: 4rem;
   }
 
-
   .title__two {
-    font-family: 'Karla', sans-serif;
+    font-family: "Karla", sans-serif;
     font-size: 3rem;
     letter-spacing: -0.2rem;
     padding: 0 0 2.375rem 4rem;
@@ -912,7 +810,6 @@ main {
     overflow: hidden;
 
     margin: 3rem 4rem 4rem 4rem;
-
   }
 
   /*로케이션 검색 */
@@ -922,22 +819,19 @@ main {
     /* width: 25rem; */
     grid-column: 1/2;
     grid-row: 1/2;
-
   }
 
   .pac-target-input {
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: "Noto Sans KR", sans-serif;
     height: 3rem;
     width: 100%;
     font-weight: 500;
     font-size: 1rem;
     border: 0;
     background-color: #f8f6f5;
-
   }
 
   /* 로케이션 검색창 */
-
 
   #autocomplete {
     width: 100%;
@@ -946,7 +840,6 @@ main {
 
   #autocomplete:focus {
     outline: 0;
-
   }
 
   #locationField {
@@ -960,7 +853,6 @@ main {
 
   /* 도시를 입력하세요 옆 검색 아이콘 */
 
-
   .ornament {
     width: 3rem;
     /* border: 0px; */
@@ -972,28 +864,23 @@ main {
     font-size: 1.1rem;
   }
 
-
-
   /*지도 옆 매장 리스트 시작 */
 
   /* 스크롤바 */
   #listing {
     overflow-y: scroll;
-    border-bottom: .0313rem solid #64606b;
-
+    border-bottom: 0.0313rem solid #64606b;
   }
 
   #listing::-webkit-scrollbar {
     width: 1.2rem;
-    ;
   }
 
   #listing::-webkit-scrollbar-track {
     background-color: #f8f6f5;
-    border-right: .0625rem solid #64606b;
-    border-left: .0625rem solid #64606b;
+    border-right: 0.0625rem solid #64606b;
+    border-left: 0.0625rem solid #64606b;
     border-bottom: 0;
-
   }
 
   #listing::-webkit-scrollbar-thumb {
@@ -1029,7 +916,6 @@ main {
     z-index: 10;
     grid-column: 1/2;
     grid-row: 2/3;
-
   }
 
   #listing #results tr {
@@ -1038,10 +924,7 @@ main {
     font-family: NotoSansKR;
     /* text-transform: uppercase;
    transition: all 500ms cubic-bezier(0.77, 0, 0.175); */
-
   }
-
-
 
   /* 리스트 내용 */
   #listing #results tr h3 {
@@ -1059,30 +942,25 @@ main {
     /* font-family: NotoSansKR; */
   }
 
-
-
   /* 리스트 길찾기버튼 .no_button */
   #listing #results tr .no_button {
     width: 5rem;
     height: 1.7rem;
-    font-size: .7rem;
-    padding: .28rem 1.3rem;
+    font-size: 0.7rem;
+    padding: 0.28rem 1.3rem;
     border: 0.5px solid #64606b;
     text-align: center;
     cursor: pointer;
-
   }
 
   #listing #results tr i {
     display: none;
   }
 
-
   /* 리스트 호버 */
   #listing #results tr :hover h3 {
     color: #73629a;
     transition: all 0.3s;
-
   }
 
   /* 리스트 길찾기버튼 호버 */
@@ -1094,14 +972,11 @@ main {
     border: 0;
   }
 
-
-
   /* 지도부분*/
 
   .store-locator__right {
     grid-column: 2/3;
     grid-row: 1/3;
-
   }
 
   #map {
@@ -1114,7 +989,7 @@ main {
   #info-content {
     background-color: white;
     color: #73629a;
-    font-family: 'NotoSansKR';
+    font-family: "NotoSansKR";
     letter-spacing: -0.0625rem;
     font-weight: 600;
   }
@@ -1123,24 +998,18 @@ main {
     color: #73629a;
     background-color: white;
     display: inline-block;
-    margin-bottom: .625rem;
+    margin-bottom: 0.625rem;
     font-size: 1.375rem;
   }
 
   #info-content table {
-    margin: .625rem;
+    margin: 0.625rem;
   }
-
 
   #iw-icon,
   .iw_attribute_name {
     display: none;
   }
-
-
-
-
-
 
   /* 온라인 스토어 */
   .online__stores {
@@ -1152,11 +1021,10 @@ main {
     border-top: 1px solid #a39e9a;
     border-bottom: 1px solid #a39e9a;
     border-spacing: 0;
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: "Noto Sans KR", sans-serif;
     font-size: 1.5rem;
     font-weight: 500;
     letter-spacing: -0.1125rem;
-
   }
 
   .online__stores__bottom {
@@ -1174,7 +1042,7 @@ main {
   }
 
   .online__stores a:hover {
-    color: #f8f6f5
+    color: #f8f6f5;
   }
 
   .online__stores__name:not(#no_right_line) {
@@ -1192,7 +1060,6 @@ main {
     margin: 0 auto;
     height: 100%;
     width: 100%;
-
   }
 
   /*==================*/
@@ -1224,7 +1091,6 @@ main {
   .pop-on-hover:hover,
   .pop-on-hover:focus,
   .pop-on-hover:active {
-
     -webkit-animation-name: pop-on-hover;
     animation-name: pop-on-hover;
     -webkit-animation-duration: 0.3s;
@@ -1236,17 +1102,11 @@ main {
   }
 
   /* 온라인 호버 끝 */
-
-
 }
-
-
-
 
 /* 🚩모바일 미디어쿼리 */
 
-@media screen and (max-width:767px) {
-
+@media screen and (max-width: 767px) {
   .upper {
     display: none;
   }
@@ -1258,12 +1118,10 @@ main {
     /* 타이틀 배경 해더 높이 따라 수정함 */
     /* 로케이터 수정필요 */
     background-color: #73629a;
-
-
   }
 
-  h1 {
-    font-family: 'Karla', sans-serif;
+  .title h1 {
+    font-family: "Karla", sans-serif;
     font-weight: 400;
     font-size: 3.3rem;
     letter-spacing: -0.28rem;
@@ -1276,9 +1134,8 @@ main {
     padding-left: 2rem;
   }
 
-
   .title__two {
-    font-family: 'Karla', sans-serif;
+    font-family: "Karla", sans-serif;
     font-size: 2.2rem;
     letter-spacing: -0.2rem;
     padding: 0 0 2rem 2rem;
@@ -1290,10 +1147,9 @@ main {
     height: 41rem;
     grid-template-columns: 1fr;
     /* 로케이터 1번 싸이즈 */
-    grid-template-rows: .5fr 5fr 6fr;
+    grid-template-rows: 0.5fr 5fr 6fr;
     overflow: hidden;
     margin: 2rem 2rem 4rem 2rem;
-
   }
 
   /*로케이션 검색 */
@@ -1303,22 +1159,19 @@ main {
     /* width: 25rem; */
     grid-column: 1/1;
     grid-row: 1/2;
-
   }
 
   .pac-target-input {
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: "Noto Sans KR", sans-serif;
     height: 3rem;
     width: 100%;
     font-weight: 500;
     font-size: 1rem;
     border: 0;
     background-color: #f8f6f5;
-
   }
 
   /* 로케이션 검색창 */
-
 
   #autocomplete {
     width: 100%;
@@ -1328,7 +1181,6 @@ main {
 
   #autocomplete:focus {
     outline: 0;
-
   }
 
   #locationField {
@@ -1342,7 +1194,6 @@ main {
 
   /* 도시를 입력하세요 옆 검색 아이콘 */
 
-
   .ornament {
     width: 3rem;
     height: 3rem;
@@ -1355,15 +1206,12 @@ main {
     font-size: 1.1rem;
   }
 
-
-
   /*지도 옆 매장 리스트 시작 */
 
   /* 스크롤바 */
   #listing {
     overflow-y: scroll;
     /* border-bottom: .0313rem solid #64606b; */
-
   }
 
   #listing::-webkit-scrollbar {
@@ -1373,10 +1221,9 @@ main {
 
   #listing::-webkit-scrollbar-track {
     background-color: #f8f6f5;
-    border-right: .0625rem solid #64606b;
-    border-left: .0625rem solid #64606b;
-    border-bottom: .0625rem solid #64606b;
-
+    border-right: 0.0625rem solid #64606b;
+    border-left: 0.0625rem solid #64606b;
+    border-bottom: 0.0625rem solid #64606b;
   }
 
   #listing::-webkit-scrollbar-thumb {
@@ -1408,13 +1255,12 @@ main {
     overflow-y: scroll;
     z-index: 10;
     grid-row: 2/3;
-    font-family: 'NotoSansKR';
+    font-family: "NotoSansKR";
   }
 
   #listing #results tr {
     height: 4.3rem;
     border-bottom: 0.5px solid #64606b;
-
   }
 
   #listing #results tr td {
@@ -1424,8 +1270,6 @@ main {
     /* 길찾기 50px */
     padding: 1.3rem 3rem 1.3rem 0;
   }
-
-
 
   /* 리스트 내용 */
   #listing #results tr h3 {
@@ -1438,33 +1282,27 @@ main {
     display: none;
   }
 
-
-
   /* 리스트 길찾기버튼 .no_button */
   #listing #results tr .no_button {
     /* width: 6rem; */
     /* height: 1.8rem; */
-    font-size: .88rem;
+    font-size: 0.88rem;
     letter-spacing: -1px;
     /* font-family: NotoSansKR; */
-    padding: .14rem .8rem;
+    padding: 0.14rem 0.8rem;
     border-bottom: 1px solid #64606b;
     text-align: center;
     cursor: pointer;
-
   }
 
   #listing #results tr i {
-    margin-left: .3125rem;
+    margin-left: 0.3125rem;
   }
-
 
   /* 리스트 호버 */
   #listing #results tr :hover h3 {
     color: #73629a;
     transition: all 1s;
-
-
   }
 
   /* 리스트 길찾기버튼 호버 */
@@ -1477,14 +1315,11 @@ main {
     border: 0;
   }
 
-
-
   /* 지도부분*/
 
   .store-locator__right {
     grid-column: 2/3;
     grid-row: 1/3;
-
   }
 
   .store-locator__right {
@@ -1503,7 +1338,7 @@ main {
   #info-content {
     background-color: white;
     color: #73629a;
-    font-family: 'NotoSansKR';
+    font-family: "NotoSansKR";
     letter-spacing: -0.0625rem;
     font-weight: 600;
   }
@@ -1512,24 +1347,18 @@ main {
     color: #73629a;
     background-color: white;
     display: inline-block;
-    margin-bottom: .625rem;
+    margin-bottom: 0.625rem;
     font-size: 1.1rem;
   }
 
   #info-content table {
-    margin: .4rem;
+    margin: 0.4rem;
   }
-
 
   #iw-icon,
   .iw_attribute_name {
     display: none;
   }
-
-
-
-
-
 
   /* 온라인 스토어 */
   .online__stores {
@@ -1541,11 +1370,10 @@ main {
     border-top: 1px solid #a39e9a;
     border-bottom: 1px solid #a39e9a;
     border-spacing: 0;
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: "Noto Sans KR", sans-serif;
     font-size: 1.1rem;
     font-weight: 500;
     letter-spacing: -0.1125rem;
-
   }
 
   .online__stores__bottom {
@@ -1563,7 +1391,7 @@ main {
   }
 
   .online__stores a:hover {
-    color: #f8f6f5
+    color: #f8f6f5;
   }
 
   .online__stores__name:not(#no_right_line) {
@@ -1581,7 +1409,6 @@ main {
     margin: 0 auto;
     height: 100%;
     width: 100%;
-
   }
 
   /*==================*/
@@ -1613,7 +1440,6 @@ main {
   .pop-on-hover:hover,
   .pop-on-hover:focus,
   .pop-on-hover:active {
-
     -webkit-animation-name: pop-on-hover;
     animation-name: pop-on-hover;
     -webkit-animation-duration: 0.3s;
@@ -1625,6 +1451,4 @@ main {
   }
 
   /* 온라인 호버 끝 */
-
-
 }
