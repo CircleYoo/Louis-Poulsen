@@ -1,6 +1,22 @@
 (function () {
   ("use strict");
 
+  // Waypoint
+  const goDir = document.querySelector('.goDir');
+
+  let $footer = document.querySelector('footer')
+    new Waypoint({
+    element: $footer,
+    handler: function (dir) {
+      if (dir === "down") {
+        goDir.classList.add("bottom");
+      } else {
+        goDir.classList.remove("bottom");
+      }
+    },
+    offset: "50%"
+    })
+  
   //상단버튼//
   const topBtn = document.querySelector("#goTop");
   topBtn.onclick = () => {
